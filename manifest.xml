@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<App uuid="5c7cd153-ab02-4241-b8dc-2482ccdbfc0">
+   <Name>Google Translate</Name>
+   <Author>Incomedia</Author>
+   <Version>3</Version>
+   <Category>Google</Category>
+   <Description l10n-id="description">Add the Google Translate Gadget in your site.</Description>
+   <ShowPreview>True</ShowPreview>
+   <Parameters>
+      <Tab>
+         <Fields>
+            <Field type="dropdown" id="language">
+               <Label l10n-id="languageOfYourSite">Website language:</Label>
+               <UpdatesPreview>true</UpdatesPreview>
+               <DefaultValue>auto</DefaultValue>
+               <Options>
+                  <Option value="auto" l10n-id="detectLanguage">detectLanguage</Option>
+                  <Option value="af" l10n-id="afrikaans">afrikaans</Option>
+                  <Option value="sq" l10n-id="albanian">albanian</Option>
+                  <Option value="ar" l10n-id="arabic">arabic</Option>
+                  <Option value="be" l10n-id="belarusian">belarusian</Option>
+                  <Option value="bg" l10n-id="bulgarian">bulgarian</Option>
+                  <Option value="ca" l10n-id="catalan">catalan</Option>
+                  <Option value="zh-CN" l10n-id="chineseSimplified">chinese Simplified</Option>
+                  <Option value="zh-TW" l10n-id="chineseTraditional">chinese Traditional</Option>
+                  <Option value="hr" l10n-id="croatian">croatian</Option>
+                  <Option value="cs" l10n-id="czech">czech</Option>
+                  <Option value="da" l10n-id="danish">danish</Option>
+                  <Option value="nl" l10n-id="dutch">dutch</Option>
+                  <Option value="en" l10n-id="english">english</Option>
+                  <Option value="eo" l10n-id="esperanto">esperanto</Option>
+                  <Option value="et" l10n-id="estonian">estonian</Option>
+                  <Option value="tl" l10n-id="filipino">filipino</Option>
+                  <Option value="fi" l10n-id="finnish">finnish</Option>
+                  <Option value="fr" l10n-id="french">french</Option>
+                  <Option value="gl" l10n-id="galician">galician</Option>
+                  <Option value="de" l10n-id="german">german</Option>
+                  <Option value="el" l10n-id="greek">greek</Option>
+                  <Option value="ht" l10n-id="haitianCreole">haitianCreole</Option>
+                  <Option value="iw" l10n-id="hebrew">hebrew</Option>
+                  <Option value="hi" l10n-id="hindi">hindi</Option>
+                  <Option value="hu" l10n-id="hungarian">hungarian</Option>
+                  <Option value="is" l10n-id="icelandic">icelandic</Option>
+                  <Option value="id" l10n-id="indonesian">indonesian</Option>
+                  <Option value="ga" l10n-id="irish">irish</Option>
+                  <Option value="it" l10n-id="italian">italianitalian</Option>
+                  <Option value="ja" l10n-id="japanese">japanese</Option>
+                  <Option value="ko" l10n-id="korean">korean</Option>
+                  <Option value="lv" l10n-id="latvian">latvian</Option>
+                  <Option value="lt" l10n-id="lithuanian">lithuanian</Option>
+                  <Option value="mk" l10n-id="macedonian">macedonian</Option>
+                  <Option value="ms" l10n-id="malay">malay</Option>
+                  <Option value="mt" l10n-id="maltese">maltese</Option>
+                  <Option value="no" l10n-id="norwegian">norwegian</Option>
+                  <Option value="fa" l10n-id="persian">persian</Option>
+                  <Option value="pl" l10n-id="polish">polish</Option>
+                  <Option value="pt" l10n-id="portuguese">portuguese</Option>
+                  <Option value="ro" l10n-id="romanian">romanian</Option>
+                  <Option value="ru" l10n-id="russian">russian</Option>
+                  <Option value="sr" l10n-id="serbian">serbian</Option>
+                  <Option value="sk" l10n-id="slovak">slovak</Option>
+                  <Option value="sl" l10n-id="slovenian">slovenian</Option>
+                  <Option value="es" l10n-id="spanish">spanish</Option>
+                  <Option value="sw" l10n-id="swahili">swahili</Option>
+                  <Option value="sv" l10n-id="swedish">swedish</Option>
+                  <Option value="th" l10n-id="thai">thai</Option>
+                  <Option value="tr" l10n-id="turkish">turkish</Option>
+                  <Option value="uk" l10n-id="ukrainian">ukrainian</Option>
+                  <Option value="vi" l10n-id="vietnamese">vietnamese</Option>
+                  <Option value="cy" l10n-id="welsh">welsh</Option>
+                  <Option value="yi" l10n-id="yiddish">yiddish</Option>
+               </Options>
+            </Field>
+
+
+
+         </Fields>
+         
+         <ShowPreview>True</ShowPreview>
+      </Tab>
+   </Parameters>
+   <Output>
+<![CDATA[<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: '<?wsx5 document.write(parameters.language.value) ?>',
+    autoDisplay: false,
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>]]>
+
+
+   </Output>
+</App>
+
+
+
+
+
